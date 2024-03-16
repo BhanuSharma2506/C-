@@ -1,0 +1,120 @@
+1 #include <iostream>
+using namespace std;
+int main(){
+// declar a intenger type variable 
+  int score; 
+  // printf enter the score
+  cout<<"enter the score"<<endl;
+  //take input into score varible
+  cin>> score;
+  //if condidition
+  if(score < 400){
+      cout<< "india win"<<endl;
+  }
+  else {
+      cout<<"pak win"<<endl;  
+  }
+    return 0;
+}
+ -------------------------------------------------------------------------------------------------------------------
+2 #include <iostream>
+using namespace std;
+int main(){
+    for(int row =0; row<5; row++){
+        ///inner
+        for(int col=0; col<5; col++){
+            cout<<"* ";
+    }
+    cout<<endl;
+  }
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------
+3 #include <iostream>
+using namespace std;
+int main(){
+    for(int row =0; row<5; row++){
+        for(int col=0; col<5; col++){
+            if(row==0||col==0||row==4||col==4){
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+    }
+    cout<<endl;
+  }
+    return 0;
+--------------------------------------------------------------------------------------------
+4 #include <iostream>
+using namespace std;
+int main(){
+    for(int row =0; row<3; row++){
+        for(int col=0; col<3; col++){
+            if(row==0||col==0||row==2||col==2){
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+    }
+    cout<<endl;
+  }
+    return 0;
+}
+------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    for(int row =0; row<n ; row++){
+        for(int col=0; col<row+1; col++){
+    cout<<"*";
+    }
+    cout<<endl;
+  }
+    return 0;
+}
+--------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    for(int row =0; row<n ; row++){
+        for(int col=0; col<n-row; col++){
+    cout<<"*";
+    }
+    cout<<endl;
+  }
+    return 0;
+}
+---------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    for(int row =0; row<n ; row++){
+        for(int col=0; col<row+1; col++){
+    cout<<n-col; 
+    }
+    cout<<endl;
+  }
+    return 0;
+}
+----------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    for(int row =0; row<n ; row++){
+        for(int col=0; col<row+1; col++){
+    cout<<col+1; 
+    }
+    cout<<endl;
+  }
+    return 0;
+}

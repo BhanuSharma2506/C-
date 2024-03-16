@@ -1,0 +1,162 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n; 
+    cout<<"enter the value ";
+    cin>>n;
+    int flog=0;
+    for(int i =2; i<n ; i++){
+        if(n%i==0){
+        flog=1;
+        }
+}
+if(flog==0){
+    cout<<"prime number";
+}
+else{
+    cout<<"not prime";
+}
+}
+---------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+   int a0 = 0,a1 = 0,a2 = 0,a3 = 0,a4 = 0,a5 = 0,a6 = 0,a7 = 0,a8 = 0,a9 = 0;
+   int value;
+   cout<<"enter the value";
+   cin>>value;
+
+   while(value>0){
+       
+       int b=value%10;
+       if(b==0){
+           a0++;
+       }
+      else if(b==1){
+           a1++;
+      }
+      else if(b==2){
+           a2++;
+   }
+      else if(b==3){
+           a3++;
+      }
+    else if(b==4){
+           a4++;
+   }
+    else if(b==5){
+           a5++;
+   }
+   else if(b==6){
+           a6++;
+   }
+    else if(b==7){
+           a7++;
+   }
+    else if(b==8){
+           a8++;
+   }
+   
+   else if(b==9){
+           a9++;
+   }
+   
+   value = value / 10;
+  
+}
+
+   
+   cout<<"a0 : "<<a0<<endl;
+   cout<<"a1 : "<<a1<<endl;
+   cout<<"a2 : "<<a2<<endl;
+   cout<<"a3 : "<<a3<<endl;
+   cout<<"a4 : "<<a4<<endl;
+   cout<<"a5 : "<<a5<<endl;
+   cout<<"a6 : "<<a6<<endl;
+   cout<<"a7 : "<<a7<<endl;
+   cout<<"a8 : "<<a8<<endl;
+   cout<<"a9 : "<<a9<<endl;
+    return 0;
+}
+----------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main(){
+int n;
+cout<<"enter the value";
+cin>>n;
+int fact=1;
+for (int i=1; i<=n;i++){
+    cout<<i<<endl;
+    fact=fact*i;
+}
+cout<<fact;
+return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+  int num;
+  cin>>num;
+   int sum=0;
+   while(num>0){
+      int rem=num%10;
+      sum=sum*10+rem;
+      num=num/10;
+   }
+   while (sum>0){
+       
+       int b = sum%10;
+     if(b==0){
+          cout<<"zero ";
+      }
+      else if(b==1){
+          cout<<"one ";
+      }
+      else if(b==2){
+          cout<<"two ";
+      }
+      else if(b==3){
+          cout<<"three ";
+      }
+    else if(b==4){
+        cout<<"four ";
+  }
+    else if(b==5){
+        cout<<"five";
+  }
+  else if(b==6){
+      cout<<"six ";
+  }
+    else if(b==7){
+        cout<<"seven ";
+  }
+    else if(b==8){
+        cout<<"eigth ";
+  }
+  else if(b==9){
+      cout<<"nine ";
+  }
+  sum = sum / 10;
+   }
+    return 0;
+  }
+-----------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+  int num;
+  cin>>num;
+   int power;
+   cin>>power;
+   int mul=1;
+   for(int i=0; i<power; i++){
+       mul=mul*num;
+   }
+   cout<<mul;
+return 0;
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,418 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b;
+    cout<<"enter the value  of a: ";
+    cin>>a;
+     cout<<"enter the value  of b: ";
+     cin>>b;
+    int sum;
+    sum=a+b;
+    cout<<"total sum:";
+    cout<<sum;
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main() {
+    int r;
+    cout<<"enter the value r : ";
+    cin>>r;
+    float cirumference = 2*3.14*r;
+    cout<<"total sum:";
+    cout<<cirumference;
+    return 0;
+}
+----------------------------------------------------------------------------------------- 
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b,r; 
+    cout<<"enter the value  of a: ";
+    cin>>a;
+     cout<<"enter the value  of b: ";
+     cin>>b;
+     cout<<"enter the value  of r: ";
+     cin>>r;
+    int avg;
+    avg=(a+b+r/3);
+    cout<<"averag of 3 number :";
+    cout<<avg;
+    return 0;
+}
+------------------------------------------------------------------------------------------
+//Write a C++ program to check whether a character is alphabet or not.
+
+#include <iostream>
+using namespace std;
+int main(){
+   char alph;
+   cout<<"enter the alpnabet:";
+   cin>>alph;
+   if(alph>='a' and alph <= 'z'){
+       cout<<"it is alpnabet";
+   }
+   else{
+     cout<<"it not is alpnabet";
+   }
+  return 0; 
+}
+----------------------------------------------------------------------------------------------
+//Write a C++ program to input any character and check whether it is alphabet, digit or special character.
+
+#include <iostream>
+using namespace std;
+int main(){
+   char alph;
+   cout<<"enter the alpnabet:";
+   cin>>alph;
+   if(alph>='a'){
+       cout<<"it is alpnabet";
+   }
+   else if(alph>='0'&& alph<='9'){
+     cout<<"it is digit";
+   }
+    else{
+     cout<<"special";
+    }
+  return 0; 
+}
+
+-----------------------------------------------------------------------------------------------
+//Write a C++ program to input any alphabet and check whether it is vowel or consonant.
+
+#include <iostream>
+using namespace std;
+int main(){
+   char alph;
+   cout<<"enter the alpnabet:";
+   cin>>alph;
+   if(alph=='a'||alph=='e'||alph=='i'||alph== 'o'|| alph=='u' ){
+       cout<<"it is vowel";
+   }
+   else{
+     cout<<"it not is consonant";
+   }
+  return 0; 
+}
+---------------------------------------------------------------------------------------------
+//Write a C++ program to check whether a character is uppercase or lowercase alphabet.
+#include <iostream>
+using namespace std;
+int main(){
+   char alph;
+   cout<<"enter the alpnabet:";
+   cin>>alph;
+   if(alph>='a'){
+       cout<<"lower case";
+   }
+   else if(alph>='A'){
+     cout<<"upper case";
+   }
+    else{
+     cout<<"not mach";
+    }
+  return 0; 
+}
+--------------------------------------------------------------------------------------------
+//Write a C++ program to input week number and print week day.
+#include <iostream>
+using namespace std;
+int main(){
+   int week;
+   cout<<"enter the week:";
+   cin>>week;
+   if(week == 1){
+       cout<<"Monday";
+   }
+   else if(week == 2){
+     cout<<"tuesday";
+   }
+     else if(week == 3){
+     cout<<"wedesday";
+    }
+    else if(week == 4){
+     cout<<"thursday";
+    }
+    else if(week == 5){
+     cout<<"friday";
+    }
+    else if(week == 6){
+     cout<<"saturday";
+    }
+    else if(week == 7){
+     cout<<"sunday";
+    }
+    else {
+     cout<<"not match";
+    }
+  return 0; 
+}
+-----------------------------------------------------------------------------------------------------
+//Write a C++ program to input month number and print number of days in that month.
+
+#include <iostream>
+using namespace std;
+int main(){
+   int week;
+   cout<<"enter the month:";
+   cin>>week;
+   if(week == 1){
+       cout<<"31 days";
+   }
+   else if(week == 2){
+     cout<<"28 && 29 days";
+   }
+     else if(week == 3){
+     cout<<"31 days";
+    }
+    else if(week == 4){
+     cout<<"30 days";
+    }
+    else if(week == 5){
+     cout<<"31 days";
+    }
+    else if(week == 6){
+     cout<<"30 days";
+    }
+    else if(week == 7){
+     cout<<"31 days";
+    }
+    else if(week == 8){
+     cout<<"30 day";
+   }
+     else if(week == 9){
+     cout<<"31 days";
+    }
+    else if(week == 10){
+     cout<<"30 days";
+    }
+    else if(week == 11){
+     cout<<"31 days";
+    }
+    else if(week == 12){
+     cout<<"30 days";
+    }
+    else {
+     cout<<"not match";
+    }
+  return 0; 
+}
+------------------------------------------------------------------------------------------------------
+//Write a C program to input angles of a triangle and check whether triangle is valid or not.
+
+#include <iostream>
+using namespace std;
+int main(){
+   int ang1,ang2,ang3;
+   cout<<"enter the angles of triangle:\n";
+    cin>>ang1;
+     cin>>ang2;
+      cin>>ang3;
+   int sum;
+   sum=ang1+ang2 +ang3;
+   if(sum==180 && ang1>0 && ang2>0 && ang3>0 ){
+       cout<<"triangle is valid";
+   }
+   else{
+       cout<<"it is not valid triangle";
+   }
+  
+  return 0; 
+}
+----------------------------------------------------------------------------------------------------------------
+//Write a C program to input all sides of a triangle and check whether triangle is valid or not.
+
+#include <iostream>
+using namespace std;
+int main(){
+   int side1,side2,side3;
+   cout<<"enter the side of triangle:\n";
+    cin>>side1;
+     cin>>side2;
+      cin>>side3;
+      
+   if(side1+side2>side3 && side2+side3>side1 && side1+side3>side2){
+       cout<<"triangle is valid";
+   }
+   else{
+       cout<<"it is not valid triangle";
+   }
+---------------------------------------------------------------------------------------------------------------
+//Write a C program to check whether the triangle is equilateral, isosceles or scalene triangle.
+
+#include <iostream>
+using namespace std;
+int main(){
+   int side1,side2,side3;
+   cout<<"enter the side of triangle:\n";
+    cin>>side1;
+     cin>>side2;
+      cin>>side3;
+      
+   if(side1==side2 && side2==side3 ){
+       cout<< "euilateral triangle";
+   }
+   else if(side1==side2 && side1==side3 &&side2==side3 ){
+       cout<<" isosceles triangle";
+   }
+   else{
+      cout<<"scalene triangle ";
+   }
+ 
+  return 0; 
+}
+------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+    int a[5] = {1,2,3,4,5};
+    int b[5];
+    int k = 0;
+    for(int i=0;i<2;i++){
+         b[k] = a[i];
+         k++;
+         }
+    for ( int i = 2; i < 5; i++ )
+    {
+        b[k] = a[i];
+         k++;
+    }
+    for ( int j = 0; j < k; j++)
+    {
+        cout << b[j];
+    }
+----------------------------------------------------------------------------------------------------------
+//Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:
+// Percentage >= 90% : Grade A
+// Percentage >= 80% : Grade B
+// Percentage >= 70% : Grade C
+// Percentage >= 60% : Grade D
+// Percentage >= 40% : Grade E
+// Percentage < 40% : Grade F
+
+#include<iostream>
+using namespace std;
+int main (){
+    int ph;
+    cout<<"enter the value Physics ";
+    cin>>ph;
+    int ch;
+    cout<<"enter the value Chemistry ";
+    cin>>ch;
+    int bio;
+    cout<<"enter the value Biology ";
+    cin>>bio;
+    int math;
+    cout<<"enter the value Mathematics ";
+    cin>>math;
+    int com;
+    cout<<"enter the value Computer ";
+    cin>>com;
+    int per=ph+ch+bio+math+com/5;
+    if(per>=90){
+        cout<< "Grade A";
+    }
+    else if(per>=80){
+        cout<< "Grade b";
+    }
+    else if(per>=70){
+        cout<< "Grade c";
+    }
+    else if(per>=60){
+        cout<< "Grade d";
+    }
+    else if(per>=40){
+        cout<< "Grade e";
+    }
+    else if(per<40){
+        cout<< "fail";
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------
+// Write a C program to input basic salary of an employee and calculate its Gross salary according to following:
+// Basic Salary <= 10000 : HRA = 20%, DA = 80%
+// Basic Salary <= 20000 : HRA = 25%, DA = 90%
+// Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+#include<iostream>
+using namespace std;
+int main(){
+    int basic;
+    float ,da,har,gross;
+    cout<<"enter the salary ";
+    cin>>basic;
+    if(basic<=10000){
+        da=basic*0.8;
+        har=basic*0.2;
+    }
+    else if(basic<=20000){
+        da=basic*0.9;
+        har=basic*0.25;
+}
+else if(basic>20000){
+        da=basic*0.95;
+        har=basic*0.3;
+}
+    gross=da+har+basic;
+    cout<<"salary of an employee "<<gross;
+return 0;
+}
+------------------------------------------------------------------------------------------------------------
+//Write a C program to input electricity unit charges and calculate total electricity bill according to the given condition:
+// For first 50 units Rs. 0.50/unit
+// For next 100 units Rs. 0.75/unit
+// For next 100 units Rs. 1.20/unit
+// For unit above 250 Rs. 1.50/unit
+// An additional surcharge of 20% is added to the bill
+
+#include<iostream>
+using namespace std;
+int main(){
+    int unit;
+    cout<<"enter the unit ";
+    float amt, total_amt, sur_charge;
+    cin>>unit;
+if(unit <= 50)
+    {
+        amt = unit * 0.50;
+    }
+    else if(unit <= 150)
+    {
+        amt = 25 + ((unit-50) * 0.75);
+    }
+    else if(unit <= 250)
+    {
+        amt = 100 + ((unit-150) * 1.20);
+    }
+    else
+    {
+        amt = 220 + ((unit-250) * 1.50);
+    }
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

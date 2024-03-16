@@ -1,0 +1,76 @@
+// Write a program in C++ to check whether a number is prime or not.
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n; 
+    cout<<"enter the value ";
+    cin>>n;
+    for(int i =2; i<n ; i++){
+        if(n%i==0){
+            cout<<" it is not prime number";
+        }
+        else {
+            cout<<"prime";
+        }
+    return 0;
+}
+}
+----------------------------------------------------------------------------------------------------------------
+// 10.Write a program in C++ to find the number and sum of all integers between
+//100 and 200 which are divisible by 
+
+#include <iostream>
+using namespace std;
+int main() {
+    int sum=0;
+    for(int i =100; i<=200 ; i++){
+        if(i%9==0){
+            cout<<i<<" ";
+            sum=sum+i;
+        }
+    }
+    cout<<endl<<sum;
+}
+-----------------------------------------------------------------------------------------------------------
+//  Write a C++ program that displays the sum of the N terms of even natural
+   
+#include <iostream>
+using namespace std;
+int main() {
+    int n; 
+    cout<<"enter the value ";
+    cin>>n;
+    int sum=0;
+    for(int i =0; i<=n ; i++){
+        if(i%2==0){
+        sum=sum+i;
+        cout<<i;
+        }
+    }
+        cout<<sum;
+}
+------------------------------------------------------------------------------------------------------
+// Write a program in C++ to find the perfect numbers between 1 and 500.1
+#include <iostream>
+using namespace std;
+int main() {
+    int n; 
+    cout<<"enter the value ";
+    cin>>n;
+    int sum=0;
+    for(int i =1; i<=n ; i++){
+        sum=sum+i;
+    }
+        cout<<sum;
+        int t;
+        cin>>t;
+         if(sum%t==0){
+            cout<<"perfect numbers";
+        }
+        else{
+            cout<<"not perfect numbers";
+        }
+
+}
+-------------------------------------------------------------------------------------------------------

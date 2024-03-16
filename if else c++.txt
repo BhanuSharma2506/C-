@@ -1,0 +1,122 @@
+// Write a C++ program to find maximum between two numbers.
+
+#include <iostream>
+using namespace std;
+int main() {
+   int a;
+   int b;
+   cout<<"Enter two numbers: a "<<endl;
+    cin>>a;
+   cout<<"Enter two numbers: b "<<endl;
+   cin>>b;
+   if(a>b){
+       cout<<"a is max value";
+   }
+   else{
+       cout<<"b is max value";
+   }
+
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------------
+// Write a C++ program to find maximum between three numbers.
+#include <iostream>
+using namespace std;
+int main() {
+   int a;
+   int b;
+   int c;
+   cout<<"Enter two numbers: a "<<endl;
+    cin>>a;
+   cout<<"Enter two numbers: b "<<endl;
+   cin>>b;
+   cout<<"Enter two numbers:  c"<<endl;
+    cin>>c;
+   if(a>b && a>c){
+       cout<<"a is max value";
+   }
+   else if(b>a && b>c){
+       cout<<"b is max value";
+   }
+   else{
+       cout<<"c is max value";
+   }
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------------------
+// Write a C++ program to check whether a number is negative, positive or zero.
+
+#include <iostream>
+using namespace std;
+int main() {
+   int num;
+   cout<<"Enter  numbers num :";cin>>num;
+    if(num>0){
+        cout<<"positive number";
+    }
+    else if(num<0){
+         cout<<"neative number";
+    }
+    else if(num==0){
+         cout<<"zero number";
+    }
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------
+// Write a C++ program to check whether a number is divisible by 5 and 11 or not.
+
+#include <iostream>
+using namespace std;
+int main() {
+   int num;
+   cout<<"Enter  numbers num :";cin>>num;
+    if(num%5==0){
+        cout<<" It is divisible by 5";
+    }
+    else if(num%11==0){
+         cout<<" It is divisible by 11";
+    }
+    else {
+         cout<<"not";
+    }
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------
+// Write a C program to check whether a number is even or odd.
+
+#include <iostream>
+using namespace std;
+int main() {
+   int num;
+   cout<<"Enter  numbers num :";cin>>num;
+    if(num%2==0){
+        cout<<" even number";
+    }
+    else {
+         cout<<"odd";
+    }
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------
+// Write a C++ program to check whether a year is leap year or not.
+
+#include <iostream>
+using namespace std;
+int main() {
+   int year;
+   cout<<"Enter  numbers num :";cin>>year;
+    if(year%4==0 && year%100!=0 || year%400==0){
+        cout<<" leap";
+    }
+    else {
+         cout<<" not leap ";
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------
+
+  
+  
+  
+
+  

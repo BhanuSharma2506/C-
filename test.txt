@@ -1,0 +1,126 @@
+ Write a program to check whether a entered character is lowercase ( a to z ) or uppercase ( A to Z ).
+
+#include <iostream>
+using namespace std;
+int main(){
+   char alph;
+   cout<<"enter the alpnabet:";
+   cin>>alph;
+   if(alph>='a'){
+       cout<<"lower case";
+   }
+   else if(alph>='A'){
+     cout<<"upper case";
+   }
+    else{
+     cout<<"not mach";
+    }
+  return 0; 
+}
+-----------------------------------------------------------------------------------------------------------
+ reverse an intiger number and print it.
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"enter the value";
+    cin>>n;
+    int sum=0;
+    int rev;
+    while(n>0){
+       rev=n%10;
+       sum=sum*10+rev;
+       n=n/10;
+    }
+     cout<<sum<<" ";   
+}
+---------------------------------------------------------------------------------------------------------
+ return true if we can make a  tringle using three lengths(given)
+
+#include<iostream>
+using namespace std;
+int main(){
+    int side1,side2,side3;
+    cout<<"enter the value side1 ";
+    cin>>side3;
+    cout<<"enter the value side2 ";
+    cin>>side2;
+    cout<<"enter the value side3 ";
+    cin>>side3;
+    if(side1+side2>side3 && side2+side3>side1 && side1+side3>side2){
+        cout<<"true";
+    }
+    else{
+        cout<<"false";
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+// write a c++ program to print a Multiplication table input given by user
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"enter the value";
+    cin>>n;
+    for(int i=1;i<=10;i++){
+     cout<<n<<" * "<<i<<" = "<<n*i<<"\n";
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------
+.Write a simple C++ program to find mean value of a 1 to n even natural numbers.
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"enter the value";
+    cin>>n;
+    for(int i=0;i<n;i++){
+    if(i%2==0){
+     cout<<i<<" ";
+    }
+}
+}
+-------------------------------------------------------------------------------------------------------------------------
+// Write a C++ program to compute the quotient and remainder.
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"enter the value ";
+    cin>>n;
+   int rem=n%10;
+   int m=n/10;
+cout<<"remainder "<<rem<<endl;
+cout<<"quotient "<<m<<"  ";
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------- 
+// . find the 3 any consecutive numbers whose sum is equal to the given targe
+#include <iostream>
+using namespace std;
+int main() {
+    int t;
+    int f = 0;
+    cout<<"enter the value ";
+    cin>>t;
+    int sum=0;
+   for(int i=0;i<t;i++){
+       sum=i+(i+1)+(i+2);
+       if(sum==t){
+           cout<<i<<" "<<(i+1)<<" "<<(i+2);
+           f=1;
+           break;
+       }
+   }
+   if(f==0){
+       cout<<"no consecutive ";
+   }
+}
+--------------------------------------------------------------------------------------------------------
+
+

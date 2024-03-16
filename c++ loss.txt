@@ -1,0 +1,66 @@
+// Write a C++ program to calculate profit or loss.
+
+#include <iostream>
+using namespace std;
+int main() {
+    int cp,amt;
+    cout<<"enter the cost price ";
+    cin>>cp;
+    cout<<"enter the selling price ";
+    int sp;
+    cin>>sp;
+    if(sp>cp){
+        amt=sp-cp;
+        cout<<"profit "<<amt;
+    }
+    else if(cp>sp){
+        amt=cp-sp;
+        cout<<"loss"<<amt;
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------
+//Write a C++ program to swap first and last digits of a numbe
+#include <iostream>
+using namespace std;
+int main() {
+    int n,first,digit,b;
+    cout<<"enter the number ";
+    cin>>n;
+    first=n;
+    while(first>0){
+      int a = first % 10;
+      first=first/10;
+     digit = a;
+    }
+    cout<<digit<<endl;
+    cout<<n%10<<endl;
+    b=n%10;
+    digit=digit+b;
+    b=digit-b;
+    digit=digit-b;
+    cout<<n;
+    cout<<digit;
+    cout<<b;
+     
+    return 0;
+}
+-------------------------------------------------------------------------------------
+//Write a C++ program to calculate sum of digits of a number.
+
+#include<iostream>
+using namespace std;
+int main(){
+    int num;
+    cout<<"enter the value";
+    cin>>num;
+    int sum=0;
+    int rem;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem;
+        num=num/10;
+    }
+    cout<<sum;
+    }
+------------------------------------------------------------------------------------------------------
