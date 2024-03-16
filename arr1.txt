@@ -1,0 +1,90 @@
+// Find the minimum and maximum element in an array
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[5]={1,2,3,4,5,};
+    int size=5;
+    int mini=arr[0];
+    int maxi=arr[0];
+    for(int i=0;i<size;i++){
+        if(arr[i]>maxi){
+            maxi=arr[i];
+        }
+        else if(arr[i]<mini){
+            mini=arr[i];
+        }
+    }
+    cout<<maxi<<" ";
+    cout<<mini;
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------
+// G. Find the occurrence of an integer in the array
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[5]={1,2,3,4,5,};
+    int size=5;
+    int start=0;
+    int key;
+    cin>>key;
+    int flag;
+    for(int i=0;i<size;i++){
+        if(arr[i]==key){
+            flag=1;
+		break;
+        }
+    }
+        if(flag){
+            cout<<"found";
+        }
+        else {
+            cout<<"not ";
+        }
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------
+}
+// Revers an  array
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[5]={1,2,3,4,5};
+    int size=5;
+    int start=0;
+    int end=size-1;
+    while(start<=end){
+      swap(arr[start],arr[end]);
+          start++;
+          end--;
+      }
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[5]={1,-2,-3,4,5};
+   
+    int start=0;
+    int end=5;
+    
+    while(start < end){
+      if(arr[start]<0){
+          swap(arr[start],arr[end-1]);
+          end--;
+      }
+      start++;
+      }
+      
+    for(int i=0; i< 5 ; i++){
+        cout<<arr[i]<<",";
+    }
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------
