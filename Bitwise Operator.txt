@@ -1,0 +1,94 @@
+ // Write a C++ program to check Least Significant Bit (LSB) of a number is set or not.
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    if(n&1){
+        cout<<"set";
+    }
+    else{
+        cout<<"not set";
+    }
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------------
+Get nth bit of a number
+
+#include <iostream>
+using namespace std;
+int main() {
+   int n;
+   cin>>n;
+   int k;
+   cin>>k;
+   int x=1;
+   x=x<<(k-1);
+   if(n&x){
+       cout<<"set";
+   } 
+   else{
+       cout<<"not set";
+   }
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+   int n;
+   cin>>n;
+   for(int i=30;i>=1;i--){
+   int k=i;
+   int x=1;
+   x=x<<(k-1);
+   if(n&x){
+       cout<<1;
+   }
+   else{
+       cout<<0;
+   }
+   }
+    return 0;
+} 
+-------------------------------------------------------------------------------------------------------
+// Write a C++ program to set nth bit of a number.
+
+#include<iostream>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+int k;
+cin>>k;
+int x=1;
+x=x<<(k-1);
+if(n|x){
+    cout<<"set";
+}
+else{
+    cout<<"not set";
+}
+}
+------------------------------------------------------------------------------------------------------------------------
+ Write a C++ program to clear nth bit of a number.
+
+#include<iostream>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+int k;
+cin>>k;
+if(n&(~1<<(k-1))){
+    cout<<1;
+}
+else{
+    cout<<0;
+}
+}
+
+
+
+
